@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>EXPLORER WORLD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	body {
+  background-image: url('travel12.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+ #start {
+  background-color: blue;
+  border-radius:24px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+h3{
+	background-size: 50px;
+	background-color: orange;
+}
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">EXPLORE INDIA</h2>
+<br>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="travel1.jpeg" style="width:100%">
+  <img class="mySlides" src="travel2.jpeg" style="width:100%">
+  <img class="mySlides" src="travel3.jpeg" style="width:100%">
+  <img class="mySlides" src="travel4.jpeg" style="width:100%">
+  <img class="mySlides" src="travel5.jpeg" style="width:100%">
+  <img class="mySlides" src="travel6.jpeg" style="width:100%">
+  <img class="mySlides" src="travel7.jpeg" style="width:100%">
+  <img class="mySlides" src="travel8.jpeg" style="width:100%">
+  <img class="mySlides" src="travel9.jpeg" style="width:100%">
+  <img class="mySlides" src="travel10.jpeg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<br>
+<br>
+<br>
+<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<center>
+<h3>CLICK ON THIS BUTTON TO EXPLORE INDIA!!!!!</h2>
+<button id="start">START</button>
+<script type="text/javascript" src="action.js"></script>
+</center>
+</body>
+</html>

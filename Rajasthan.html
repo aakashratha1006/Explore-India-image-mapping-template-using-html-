@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rajasthan</title>
+</head>
+<style>
+ body{
+ 	background-image:url("color1.jpeg");
+ 	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+ }
+ h1{
+ 	color: white;
+ }
+ h2{
+ 	color: white;
+ }
+ p{
+ 	color: white;
+ }
+ .mySlides {display:none;}
+</style>
+<body>
+    <h1 class="w3-center">Rajasthan!!!</h1>
+<br>
+<div class="w3-content w3-display-container">
+	<center>
+  <img class="mySlides" src="Rajasthan1.jpeg" style="width:100%">
+  <img class="mySlides" src="travel2.jpeg" style="width:100%">
+  <img class="mySlides" src="travel3.jpeg" style="width:100%">
+  <img class="mySlides" src="travel4.jpeg" style="width:100%">
+  <img class="mySlides" src="travel5.jpeg" style="width:100%">
+  <img class="mySlides" src="travel6.jpeg" style="width:100%">
+  <img class="mySlides" src="travel7.jpeg" style="width:100%">
+  <img class="mySlides" src="travel8.jpeg" style="width:100%">
+  <img class="mySlides" src="travel9.jpeg" style="width:50%">
+  <img class="mySlides" src="travel10.jpeg" style="width:50%">
+   </center>
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<br>
+<br>
+<br>
+<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script> 
+
+	<p>is a state in northern India.The state covers an area of 342,239 square kilometres (132,139 sq mi) or 10.4 percent of the total geographical area of India. It is the largest Indian state by area and the seventh largest by population. Rajasthan is located on the northwestern side of India, where it comprises most of the wide and inhospitable Thar Desert (also known as the "Great Indian Desert") and shares a border with the Pakistani provinces of Punjab to the northwest and Sindh to the west, along the Sutlej-Indus river valley. Elsewhere it is bordered by five other Indian states: Punjab to the north; Haryana and Uttar Pradesh to the northeast; Madhya Pradesh to the southeast; and Gujarat to the southwest.</p>
+
+
+</body>
+</html>
